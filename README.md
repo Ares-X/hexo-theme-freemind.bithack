@@ -71,12 +71,6 @@ Remember to change `layout` on new page
 
 Modify `theme` setting in your `_config.yml` to `freemind.bithack`.
 
-## Update ##
-
-``` sh
-$ cd themes/freemind.bithack
-$ git pull
-```
 
 ## Configuration ##
 
