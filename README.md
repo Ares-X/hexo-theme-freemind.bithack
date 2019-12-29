@@ -26,7 +26,7 @@ add support of valine comment.
 
 ## Install ##
 
-1) install theme:
+1) download theme:
 
 ``` sh
 $ git clone git@github.com:Ares-X/hexo-theme-freemind.bithack
