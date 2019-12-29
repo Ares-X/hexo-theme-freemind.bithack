@@ -1,0 +1,68 @@
+<%- partial('post/title', {item: item, index: false}) %>
+
+<div class="row <% if (post) { %>post<% } else { %>page<% } %>">
+	<!-- cols -->
+	<% if (post) { %>
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	<% } else { %>
+	<div class="col-md-12"> 
+	<% } %>
+
+	<!-- content -->
+	<div class="mypage">		
+	  <% if (item.description) { %>
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <%- item.description %>
+		 </div> <!-- alert -->
+	  <% } %>		
+
+	  <%- item.content %>
+	  <%- partial('post/copyright', {page: item}) %>
+	</div>
+
+	<% if (path != 'about/index.html') { %>
+	<span id="<%= url_for(page.path) %>" class="leancloud-visitors view" data-flag-title="<%= page.title %>">
+		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
+	</span>
+	<% } %>
+	<div>
+  	<center>
+
+	<%- partial('post/pagination', {page: item}) %>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	<!--<%- partial('post/comment', {page: item}) %>-->
+	<% if (theme.valine && theme.valine.appid && theme.valine.appkey){ %>
+		<section id="comments" class="comments">
+			<style>
+			.comments{margin:30px;padding:10px;background:rgb(0, 0, 0)}
+			@media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+			</style>
+			<%- partial('post/valine', {
+			key: post.slug,
+			title: post.title,
+			url: config.url+url_for(post.path)
+			}) %>
+		</section>
+	<% } %>
+	</div> <!-- col-md-9/col-md-12 -->
+
+
+	<% if (post) { %>
+	<div id="side_meta">
+		<%- partial('post/meta', {item: item}) %>
+		
+
+	</div>
+	
+	<% } %>	
+
+</div><!-- row -->
+
+<!--<%- partial('post/comment_footer', {page: item}) %> -->
+
+

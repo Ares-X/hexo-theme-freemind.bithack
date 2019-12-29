@@ -1,0 +1,75 @@
+<%
+   var title = '';
+   var posts = site.posts;
+   if (page.category) {
+   	  title = page.category;
+	  posts = page.posts;
+   }
+   if (page.tag) {
+      title = page.tag;
+	  posts = page.posts;
+   }
+   if (page.archive){
+   	  if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+   	  else {
+	      title = __('archive_a');
+		  posts = site.posts;
+	  }
+   }
+   var year, month;
+   var last_year = 1970;
+   var is_first_year = 1;
+   %>
+
+<!-- title -->
+<div class="page-header">
+  <h1 class="archive-title<% if (page.tag){ %>-tag<% } else if (page.category){ %>-category<% } %>"><i class="fa fa-archive"></i> <%= title %></h1>
+</div>
+
+<div class="row page">
+  <!-- cols -->
+  <% if (theme.widgets.length) { %>
+  <div class="col-md-9">
+	<% } else { %>
+	<div class="col-md-12">
+	  <% } %>
+
+	  <div id="top_search"></div>
+
+	  <div class="archive">
+		<% posts.sort('date', -1).each(function(item){ %>
+		<%
+		   year = item.date.toDate().getFullYear();
+		   month = item.date.toDate().getMonth();	   
+		%>
+		<% if (year != last_year){ %>
+			<% if (!is_first_year) { %>
+			</ul>
+			<% } %>
+			<% is_first_year = 0 %>
+			<h4 class="archive-ul" data-toggle="collapse" data-target="#<%= year %>"><%= year %><b class="caret"></b></h4>
+			<ul id="<%= year %>" class="collapse in">
+			<% last_year = year; %>
+		<% } %>
+		<li class="listing-item">
+		<span class="date_class"> <%= item.date.format("YYYY-MM-DD") %> </span> &raquo;
+		<% if (item.link){ %>
+		   <% if (item.title){ %>
+		   	  <span class="title link"><a href="<%- item.link %>" target="_blank" <% if (item.description) { %> title="<%= item.description %>" <% } %>><%= item.title %></a></span>
+		   <% } else { %>
+		   	  <span class="title link"><a href="<%- item.link %>" target="_blank" <% if (item.description) { %> title="<%= item.description %>" <% } %>><%= item.link %></a></span>
+		   <% } %>
+		<% } else { %>
+		   <span class="title"><a href="<%- config.root %><%- item.path %>" <% if (item.description) { %> title="<%= item.description %>" <% } %>><%= item.title %></a></span>
+		<% } %>
+		</li>			
+		<% }); %>
+		</ul>
+		</div>
+
+</div> <!-- col-md-9/col-md-12 -->
+
+<% if (theme.widgets.length) { %>
+<%- partial('sidebar') %>
+<% } %>
+
