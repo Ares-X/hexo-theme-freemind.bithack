@@ -44,7 +44,14 @@ $ npm install hexo-tag-bootstrap --save
 $ npm install hexo-generator-search --save
 ```
 
-4) Create pages
+4) install hexo-excerpt (need)
+
+```sh
+$ npm install hexo-excerpt --save
+```
+
+
+5) Create pages
 
 freemind.bithack offers you the customized Categories, Tags and About pages. But you need to manually create these page at your 'source' folder.
 
