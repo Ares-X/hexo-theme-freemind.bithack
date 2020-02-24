@@ -346,11 +346,25 @@ header h1 {
 }
 
 h1 {
-    font-size: 1.5em;
-    line-height: 1.2em;
+    font-size: 1.9em;
     margin-bottom: .6667em
 }
-
+h2 {
+    font-size: 1.7em;
+    margin-bottom: .6667em
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: .6667em
+}
+h4 {
+    font-size: 1.3em;
+    margin-bottom: .6667em
+}
+h5 {
+    font-size: 1.1em;
+    margin-bottom: .6667em
+}
 h1,
 h2,
 h3,
@@ -359,6 +373,7 @@ h5,
 h6 {
     text-rendering: optimizelegibility;
     font-weight: bold;
+    line-height: 1.2em;
     font-family: DOS, SimHei, Monaco, Menlo, Consolas, 'Courier New', monospace;
     color: #fff
 }
@@ -379,7 +394,9 @@ h2 {
     border-radius: 6px 6px 0 0;
     font-size: 1.3em
 }
-
+em{
+    font-style:oblique;
+}
 .page .entry {
     padding-top: 10px;
     padding-bottom: 25px
@@ -388,21 +405,6 @@ h2 {
 .page .entry .row {
     padding-left: 20px;
     padding-right: 5px
-}
-
-.page .entry h2 {
-    display: block;
-    overflow: hidden;
-    width: 0;
-    height: 0;
-    margin: -20px 0
-}
-
-.page .entry h3 {
-    display: block;
-    overflow: hidden;
-    width: 0;
-    height: 0
 }
 
 .page .entry .col-md-8 {
@@ -457,7 +459,7 @@ h2 {
     list-style: circle;
     line-height: 1em;
     margin-bottom: 0;
-    padding: 10px 20px
+    padding: 10px 12px
 }
 
 .toc-article li {

@@ -58,7 +58,7 @@ abbr[title] {
 
 b,
 strong {
-    font-weight: normal
+    font-weight: weight
 }
 
 dfn {
@@ -1533,11 +1533,11 @@ h3 {
 }
 
 h3:before {
-    content: "["
+    content: ""
 }
 
 h3:after {
-    content: "]"
+    content: ""
 }
 
 h1 {
@@ -1556,7 +1556,6 @@ h3 {
 
 h4 {
     font-size: 18px;
-    color: #fff
 }
 
 h5 {
@@ -1803,10 +1802,6 @@ u:after {
     content: '_'
 }
 
-em:before,
-em:after {
-    content: '/'
-}
 
 strong {
     text-transform: uppercase
