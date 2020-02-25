@@ -469,12 +469,12 @@ em{
 
 .toc-article ol {
     list-style: square;
-    padding: 5px 20px
+    padding: 5px 10px
 }
 
 .toc-article ol ol {
     list-style: circle;
-    padding: 5px 20px
+    padding: 5px 10px
 }
 
 .line {
