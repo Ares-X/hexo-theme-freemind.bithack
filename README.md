@@ -39,7 +39,7 @@ $ git clone git@github.com:Ares-X/hexo-theme-freemind.bithack
 $ npm install hexo-tag-bootstrap --save
 ```
 
-3) install [hexo-generator-search](https://github.com/paichyperiondev/hexo-generator-search) (*optional*):
+3) install [hexo-generator-search](https://github.com/paichyperiondev/hexo-generator-search):
 
 ``` sh
 $ npm install hexo-generator-search --save
@@ -150,6 +150,18 @@ auto_excerpt:
     lines: 50
 
 ```
+
+
+hexo config file(not theme config)：
+
+```
+category_generator:
+  per_page: 0
+
+tag_generator:
+   per_page: 0
+```
+
 
 * **slogan** - slogan display at the index page
 * **menu** - Navigation menu
