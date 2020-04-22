@@ -137,13 +137,12 @@ swiftype_key:
 #valine comment (change to yours)
 valine: 
   enable: true
-  appid:  
-  appkey: 
-  verify: false
-  notify: false 
+  appid: ''
+  appkey: ''
   placeholder: "提交评论时留下邮箱收到回复后将自动通知"
   visitor: true
-
+  avatar: ''
+  requiredFields: ['nick']
 
 auto_excerpt:
     enable: true
