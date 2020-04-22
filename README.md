@@ -135,6 +135,7 @@ baidu_tongji:
 # Search
 swiftype_key: 
 #valine comment (change to yours)
+# docs：https://valine.js.org/configuration.html
 valine: 
   enable: true
   appid: ''
