@@ -128,9 +128,6 @@ fancybox: true
 google_analytics:
   enable: false
   siteid:
-baidu_tongji:
-  enable: false
-  siteid:
 
 # Search
 swiftype_key: 
@@ -144,10 +141,6 @@ valine:
   visitor: true
   avatar: ''
   requiredFields: ['nick']
-
-auto_excerpt:
-    enable: true
-    lines: 50
 
 ```
 
