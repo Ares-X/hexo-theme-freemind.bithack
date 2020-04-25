@@ -132,7 +132,8 @@ select,
 textarea {
     color: inherit;
     font: inherit;
-    margin: 0
+    margin: 0;
+    background: black;
 }
 
 button {
