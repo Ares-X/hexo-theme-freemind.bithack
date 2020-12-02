@@ -58,7 +58,7 @@ freemind.bithack offers you the customized Categories, Tags and About pages. But
 
 For example, to create a `Categories` page, you may create a `index.html` file at `source/categories/` folder with the following contents:
 
-```
+```yml
 title: Categories
 layout: categories
 ---
@@ -82,7 +82,7 @@ Modify `theme` setting in your `_config.yml` to `freemind.bithack`.
 
 ## Configuration ##
 
-```
+```yml
 slogan: Yet another bootstrap theme.
 
 menu:
@@ -147,7 +147,7 @@ valine:
 
 hexo config file(not theme config)：
 
-```
+```yml
 category_generator:
   per_page: 0
 
@@ -169,7 +169,7 @@ tag_generator:
 ## copyright ##
 
 edit it in `\layout\_partial\post\copyright.ejs`
-```
+```html
 <div class="article-footer-copyright">
 
     本博客采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议(CC BY-NC-SA 4.0) 发布.
@@ -186,7 +186,7 @@ There are some new front-matter settings in freemind.bithack that you can use to
 
 For example:
 
-```
+```yml
 title: Tag Plugins
 date: 2014-03-16 10:17:16
 tags: plugins
