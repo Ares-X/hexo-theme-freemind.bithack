@@ -21,7 +21,7 @@
 	  <%- partial('post/copyright', {page: item}) %>
 	</div>
 
-	<% if (path != 'about/index.html') { %>
+	<% if (theme.valine.enable && theme.valine.pageView && path != 'about/index.html') { %>
 	<span id="<%= url_for(page.path) %>" class="leancloud-visitors view" data-flag-title="<%= page.title %>">
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>

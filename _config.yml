@@ -60,12 +60,12 @@ google_analytics:
 #swiftype_key: ZP2ZSuHgipSZfRyU8uTR
 #valine comment (change to yours)
 valine: 
-  enable: true
+  enable: false
   appId: 'xxx'
   appKey: 'xxx'
   placeholder: "提交评论时留下邮箱收到回复后将自动通知"
   visitor: true
   avatar: 'monsterid'
   requiredFields: ['nick','mail']
-
+  pageView: true
   
