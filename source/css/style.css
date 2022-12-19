@@ -646,3 +646,64 @@ border: 2px solid rgb(255, 255, 255) !important;
 .leancloud-visitors-count{
     font-size: 12px;
 }
+
+/*waline 评论系统样式*/
+
+.wl-comment {
+    /* 字体大小 */
+    --waline-font-size: 16px;
+    /* 常规颜色 */
+    --waline-white: #000;
+    --waline-light-grey: #666;
+    --waline-dark-grey: #999;
+  
+    /* 主题色 */
+    --waline-theme-color: #27ae60;
+    --waline-active-color: #2ecc71;
+  
+    /* 布局颜色 */
+    --waline-color: #e4e4e4;
+    --waline-bgcolor: #000000;
+    --waline-bgcolor-light: #101010;
+    --waline-bgcolor-hover: #f0f0f0;
+    --waline-border-color: #333;
+    --waline-disable-bgcolor: #444;
+    --waline-disable-color: #272727;
+    --waline-code-bgcolor: #282c34;
+  
+    /* 特殊颜色 */
+    --waline-bq-color: #272727;
+  
+    /* 头像 */
+    --waline-avatar-size: 3.25rem;
+    --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+  
+    /* 徽章 */
+    --waline-badge-color: #3498db;
+    --waline-badge-font-size: 0.775em;
+  
+    /* 信息 */
+    --waline-info-bgcolor: #000000;
+    --waline-info-color: #e4e4e4;
+    --waline-info-font-size: 0.625em;
+  
+    /* 渲染选择 */
+    --waline-border: 1px solid var(--waline-border-color);
+    --waline-avatar-radius: 50%;
+    --waline-box-shadow: none;
+  }
+  .wl-cards {
+    --waline-color: #e3e3e3;
+    --waline-bgcolor: #000000;
+    --waline-bgcolor-light: #1a1a1a;
+    --waline-bgcolor-hover: #f0f0f0;
+    --waline-border-color: rgb(255, 255, 255);
+    --waline-disable-bgcolor: #444;
+    --waline-disable-color: #272727;
+    --waline-code-bgcolor: #282c34;
+    --waline-dark-grey: #e4e4e4;
+    --waline-info-bgcolor: #000000;
+    --waline-info-color: #e4e4e4;
+
+    }
+
