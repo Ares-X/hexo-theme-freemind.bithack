@@ -1,0 +1,11 @@
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+  />
+  <div id="waline"></div>
+  <script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+    var walineConfig = <%- JSON.stringify(theme.waline)%>
+    walineConfig.el='#waline';
+    init(walineConfig);
+  </script>
