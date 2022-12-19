@@ -65,7 +65,7 @@ valine:
   appId: 'xxx'
   appKey: 'xxx'
   placeholder: ""
-  visitor: true
+  visitor: false
   avatar: 'monsterid'
   requiredFields: ['nick','mail']
   pageView: false
@@ -74,7 +74,7 @@ valine:
 waline:
   enable: false
   serverURL: ''
-  pageview: true
+  pageview: false
   lang: en
   dark: true
   requiredMeta: ['nick', 'mail']
