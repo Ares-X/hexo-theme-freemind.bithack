@@ -129,7 +129,7 @@ widgets:
 - recent_posts
 - links
 
-rss: 
+rss: atom.xml
 fancybox: true
 favicon: favicon.png
 #duoshuo_shortname: 
@@ -145,6 +145,7 @@ google_analytics:
 #swiftype_key: ZP2ZSuHgipSZfRyU8uTR
 
 #valine comment (change to yours)
+# doc: https://valine.js.org/en/hexo.html
 valine: 
   enable: false
   appId: 'xxx'
@@ -156,6 +157,7 @@ valine:
   pageView: false
   
 #waline comment (change to yours)
+# doc: https://waline.js.org/
 waline:
   enable: false
   serverURL: ''
