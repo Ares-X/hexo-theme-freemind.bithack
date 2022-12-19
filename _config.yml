@@ -44,7 +44,7 @@ widgets:
 - recent_posts
 - links
 
-rss: 
+rss: atom.xml
 fancybox: true
 favicon: favicon.png
 #duoshuo_shortname: 
