@@ -45,7 +45,7 @@ $ npm install hexo-tag-bootstrap --save
 $ npm install hexo-generator-search --save
 ```
 
-4) install hexo-excerpt (need)
+4) install hexo-excerpt (necessary)
 
 ```sh
 $ npm install hexo-excerpt --save
@@ -83,35 +83,44 @@ Modify `theme` setting in your `_config.yml` to `freemind.bithack`.
 ## Configuration ##
 
 ```yml
-slogan: Yet another bootstrap theme.
+slogan: "wubba lubba dub dub."
+
+show_heart: true
+
+show_slogan: true
 
 menu:
   - title: Archives
     url: archives
-    intro: All the articles.
-    icon: fa fa-archive
+    intro: "All the articles."
+    # icon: "fa fa-archive"
   - title: Categories
     url: categories
-    intro: All the categories.
-    icon: fa fa-folder
+    intro: "All the categories."
+    # icon: "fa fa-folder"
   - title: Tags
     url: tags
-    intro: All the tags.
-    icon: fa fa-tags
+    intro: "All the tags."
+    # icon: "fa fa-tags"
   - title: About
     url: about
-    intro: About me.
-    icon: fa fa-user
+    intro: "About me."
+    # icon: "fa fa-user"
+  - title: RSS
+    url: atom.xml
+    intro: "Subscribe me."
+    # icon: "fa fa-user"
 
 links:
-  - title: My Github
-    url: http://www.github.com/blackshow
-    intro: My Github account.
-    icon: fa fa-github
-  - title: My LinkedIn
-    url: http://www.linkedin.com/in/blackshow
-    intro: My Linkin account.
-    icon: fa fa-linkedin
+  - title: hexo-theme-bithack
+    url: https://github.com/Ares-X/hexo-theme-freemind.bithack
+    intro: ""
+    icon: false
+
+  # - title: "My LinkedIn"
+  #   url: http://www.linkedin.com/in/xxx
+  #   intro: "My Linkin account."
+  #   icon: "fa fa-linkedin"
 
 widgets:
 - search
@@ -120,28 +129,44 @@ widgets:
 - recent_posts
 - links
 
-rss: atom.xml
-favicon: favicon.png
+rss: 
 fancybox: true
+favicon: favicon.png
+#duoshuo_shortname: 
 
-# analytics
+
+# Analytics (change to yours)
 google_analytics:
-  enable: false
-  siteid:
-
-# Search
-swiftype_key: 
-#valine comment (change to yours)
-# docs：https://valine.js.org/configuration.html
-valine: 
   enable: true
-  appid: ''
-  appkey: ''
-  placeholder: "提交评论时留下邮箱收到回复后将自动通知"
-  visitor: true
-  avatar: ''
-  requiredFields: ['nick']
+  siteid: UA-70812759-1
 
+
+# search
+#swiftype_key: ZP2ZSuHgipSZfRyU8uTR
+
+#valine comment (change to yours)
+valine: 
+  enable: false
+  appId: 'xxx'
+  appKey: 'xxx'
+  placeholder: ""
+  visitor: true
+  avatar: 'monsterid'
+  requiredFields: ['nick','mail']
+  pageView: false
+  
+#waline comment (change to yours)
+waline:
+  enable: false
+  serverURL: ''
+  pageview: false
+  lang: en
+  dark: true
+  requiredMeta: ['nick', 'mail']
+  locale:
+    placeholder: 'Comment with Email address will get notification when replied'
+
+    
 ```
 
 
@@ -162,7 +187,7 @@ tag_generator:
 * **widgets** - Widgets displaying in sidebar
 * **rss** - RSS link
 * **fancybox** - Enable [Fancybox](http://fancyapps.com/fancybox/)
-* **valine** - Valine config, if you prefer to use Valine
+* **valine/waline** - Valine or Waline comment system config
 * **analytics** - Analytics ID. Supports both Google Analytics and Baidu Tongji.
 * **swiftype_key** - Swifttype key to enable local searching. Leave it blank or comment this line if you want to use build-in local search engine.
 
