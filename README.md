@@ -167,7 +167,17 @@ waline:
   requiredMeta: ['nick', 'mail']
   locale:
     placeholder: 'Comment with Email address will get notification when replied'
-
+# gitalk comment (change to yours)
+# doc: https://github.com/gitalk/gitalk
+gitalk:
+  enable: false
+  clientID: ''
+  clientSecret: ''
+  repo: ''
+  owner: ''
+  admin: ['']
+  id: location.pathname # It is recommended not to change
+  distractionFreeMode: true
     
 ```
 

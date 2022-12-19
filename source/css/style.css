@@ -707,3 +707,57 @@ border: 2px solid rgb(255, 255, 255) !important;
 
     }
 
+/*gitalk 评论系统样式*/
+
+.gt-container .gt-header-textarea{
+
+    background-color: #000 !important;
+    border: 1px solid #8b8b8b !important;
+}
+
+.gt-container .gt-popup {
+
+    background: rgb(0, 0, 0) !important;
+
+}
+
+.gt-container .gt-header-preview {
+
+    border: 1px solid rgba(0,0,0,0.1)!important;
+    background-color: #000000 !important;
+}
+
+.gt-container .gt-header-preview.markdown-body{
+
+    color: #ffffff !important;
+}
+
+.gt-container .gt-btn {
+
+    background-color: #2bbc8a!important;
+    color: #000 !important;
+    border: 1px solid #000000 !important;
+    font-size: 0.8em !important;
+}
+
+.gt-container .gt-header-controls-tip {
+
+    color: #2bbc8a!important;
+}
+.gt-container a {
+
+    color: #2bbc8a !important;
+}
+.gt-container .gt-comment-content {
+    background-color: #101010 !important;
+}
+
+.gt-container .gt-comment-body.markdown-body {
+    color: #fff !important;
+}
+
+.gt-container .gt-svg svg {
+    width: 100%;
+    height: 100%;
+    fill: #ffffff !important;
+}

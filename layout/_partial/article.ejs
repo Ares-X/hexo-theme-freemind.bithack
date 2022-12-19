@@ -60,6 +60,11 @@
 			<%- partial('post/waline') %>
 		</section>
 	<% } %>
+	<% if (theme.gitalk.enable  ){ %>
+		<section id="comments" class="comments">
+			<%- partial('post/gitalk') %>
+		</section>
+	<% } %>
 	</div> <!-- col-md-9/col-md-12 -->
 
 

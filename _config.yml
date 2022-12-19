@@ -74,9 +74,19 @@ valine:
 waline:
   enable: false
   serverURL: ''
-  pageview: false
+  pageview: true
   lang: en
   dark: true
   requiredMeta: ['nick', 'mail']
   locale:
     placeholder: 'Comment with Email address will get notification when replied'
+
+gitalk:
+  enable: false
+  clientID: ''
+  clientSecret: ''
+  repo: ''
+  owner: ''
+  admin: ['']
+  id: location.pathname
+  distractionFreeMode: true
