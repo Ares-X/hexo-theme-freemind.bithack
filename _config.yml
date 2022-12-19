@@ -58,14 +58,25 @@ google_analytics:
 
 # search
 #swiftype_key: ZP2ZSuHgipSZfRyU8uTR
+
 #valine comment (change to yours)
 valine: 
   enable: false
   appId: 'xxx'
   appKey: 'xxx'
-  placeholder: "提交评论时留下邮箱收到回复后将自动通知"
+  placeholder: ""
   visitor: true
   avatar: 'monsterid'
   requiredFields: ['nick','mail']
-  pageView: true
+  pageView: false
   
+#waline comment (change to yours)
+waline:
+  enable: false
+  serverURL: ''
+  pageview: false
+  lang: en
+  dark: true
+  requiredMeta: ['nick', 'mail']
+  locale:
+    placeholder: 'Comment with Email address will get notification when replied'
