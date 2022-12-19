@@ -13,9 +13,14 @@ Fixed a lot of bugs left by the original author.
 ## Requirements ##
 
 * Hexo >= 3.0
+* [hexo-generator-search](https://github.com/paichyperiondev/hexo-generator-search)
+* [hexo-excerpt](https://github.com/chekun/hexo-excerpt)(must)
 * [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap) >= 0.0.8 (optional)
 ## Features ##
 
+* **Valine Comment Support**
+* **Waline Comment Support**
+* **Gitalk Comment Support**
 * **Bootstrap** - get the power of Twitter Bootstrap with minimal hassle;
 * **Tag plugins** - luxuriant Bootstrap tag plugins, provided by [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap), including:
   - textcolor - a paragraph of text with specified color;
