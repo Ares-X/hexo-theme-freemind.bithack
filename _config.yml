@@ -50,7 +50,7 @@ favicon: favicon.png
 #duoshuo_shortname: 
 
 
-# Analytics (change to yours)
+# Analytics
 google_analytics:
   enable: true
   siteid: UA-70812759-1
@@ -59,7 +59,7 @@ google_analytics:
 # search
 #swiftype_key: ZP2ZSuHgipSZfRyU8uTR
 
-#valine comment (change to yours)
+#valine
 valine: 
   enable: false
   appId: 'xxx'
@@ -70,7 +70,7 @@ valine:
   requiredFields: ['nick','mail']
   pageView: false
   
-#waline comment (change to yours)
+#waline
 waline:
   enable: false
   serverURL: ''
