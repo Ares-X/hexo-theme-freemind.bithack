@@ -26,6 +26,12 @@
 		<em class="post-meta-item-text"> Page View </em> <i class="leancloud-visitors-count"></i>
 	</span>
 	<% } %>
+	<% if (theme.waline.enable && theme.waline.pageview && path != 'about/index.html') { %>
+		 <span  data-path="<%= url_for(page.path) %>" >
+			<em class="post-meta-item-text"> Page View   <i class="waline-pageview-count"></i></em>
+		</span>
+
+	  <% } %>
 	<div>
   	<center>
 
@@ -47,6 +53,11 @@
 			title: post.title,
 			url: config.url+url_for(post.path)
 			}) %>
+		</section>
+	<% } %>
+	<% if (theme.waline.enable && theme.waline.serverURL ){ %>
+		<section id="comments" class="comments">
+			<%- partial('post/waline') %>
 		</section>
 	<% } %>
 	</div> <!-- col-md-9/col-md-12 -->
