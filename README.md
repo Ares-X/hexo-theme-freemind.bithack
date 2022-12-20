@@ -87,6 +87,8 @@ Modify `theme` setting in your `_config.yml` to `freemind.bithack`.
 
 ## Configuration ##
 
+### Theme Config
+
 ```yml
 slogan: "wubba lubba dub dub."
 
@@ -186,15 +188,31 @@ gitalk:
     
 ```
 
+### Hexo Config
 
 hexo config file(not theme config)：
 
 ```yml
+# disable category and tag page split
 category_generator:
   per_page: 0
 
 tag_generator:
    per_page: 0
+
+# enable prismjs
+highlight:
+  enable: false
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  enable: true
+  preprocess: true
+  line_number: true
+  tab_replace: ''
 ```
 
 
@@ -204,7 +222,7 @@ tag_generator:
 * **widgets** - Widgets displaying in sidebar
 * **rss** - RSS link
 * **fancybox** - Enable [Fancybox](http://fancyapps.com/fancybox/)
-* **valine/waline** - Valine or Waline comment system config
+* **valine/waline/Gitalk** - Valine/Waline/Gitalk comment system config
 * **analytics** - Analytics ID. Supports both Google Analytics and Baidu Tongji.
 * **swiftype_key** - Swifttype key to enable local searching. Leave it blank or comment this line if you want to use build-in local search engine.
 
