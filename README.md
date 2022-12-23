@@ -35,7 +35,7 @@ Fixed a lot of bugs left by the original author.
 1) download theme:
 
 ``` sh
-$ git clone git@github.com:Ares-X/hexo-theme-freemind.bithack
+$ git clone git@github.com:Ares-X/hexo-theme-freemind.bithack themes/freemind.bithack
 ```
 
 2) install [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap) (*optional*):
@@ -82,8 +82,9 @@ Remember to change `layout` on new page
 
 ## Enable ##
 
-Modify `theme` setting in your `_config.yml` to `freemind.bithack`.
+1) Modify `theme` setting in your hexo config file `_config.yml` to `freemind.bithack`.
 
+2) Create theme config to hexo root dir via `cp themes/freemind.bithack/_config.yml ./_config.freemind.bithack.yml`
 
 ## Configuration ##
 
