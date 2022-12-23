@@ -20,7 +20,7 @@ Fixed a lot of bugs left by the original author.
 
 * **Valine Comment Support**
 * **Waline Comment Support**
-* **Comment Support**
+* **Gitalk Comment Support**
 * **Bootstrap** - get the power of Twitter Bootstrap with minimal hassle;
 * **Tag plugins** - luxuriant Bootstrap tag plugins, provided by [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap), including:
   - textcolor - a paragraph of text with specified color;
