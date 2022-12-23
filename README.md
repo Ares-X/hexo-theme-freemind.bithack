@@ -89,6 +89,8 @@ Modify `theme` setting in your `_config.yml` to `freemind.bithack`.
 
 ### Theme Config
 
+**copy `_config.yml` from `hexo-theme-freemind.bithack` to your hexo root path and rename it as `_config.hexo-theme-freemind.bithack.yml`**
+
 ```yml
 slogan: "wubba lubba dub dub."
 
