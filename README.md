@@ -4,7 +4,7 @@ Hexo-Theme-freemind.bithack
 ![screenshot](https://i.loli.net/2019/12/29/lIi6JXUCj45MGtk.png)
 
 freemind.bithack modified by freemind.386 ,changed some color combination and font.
-add support of valine comment.
+add support of Waline/Valine & Gitalk comment.
 Fixed a lot of bugs left by the original author.
 
 * [Demo](http://ares-x.com)
@@ -20,7 +20,7 @@ Fixed a lot of bugs left by the original author.
 
 * **Valine Comment Support**
 * **Waline Comment Support**
-* **Gitalk Comment Support**
+* **Comment Support**
 * **Bootstrap** - get the power of Twitter Bootstrap with minimal hassle;
 * **Tag plugins** - luxuriant Bootstrap tag plugins, provided by [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap), including:
   - textcolor - a paragraph of text with specified color;
@@ -35,7 +35,7 @@ Fixed a lot of bugs left by the original author.
 1) download theme:
 
 ``` sh
-$ git clone git@github.com:Ares-X/hexo-theme-freemind.bithack
+$ git clone git@github.com:Ares-X/hexo-theme-freemind.bithack themes/freemind.bithack
 ```
 
 2) install [hexo-tag-bootstrap](https://github.com/wzpan/hexo-tag-bootstrap) (*optional*):
@@ -50,7 +50,7 @@ $ npm install hexo-tag-bootstrap --save
 $ npm install hexo-generator-search --save
 ```
 
-4) install hexo-excerpt (necessary)
+4) install hexo-excerpt (must)
 
 ```sh
 $ npm install hexo-excerpt --save
@@ -82,8 +82,9 @@ Remember to change `layout` on new page
 
 ## Enable ##
 
-Modify `theme` setting in your `_config.yml` to `freemind.bithack`.
+1) Modify `theme` setting in your hexo config file `_config.yml` to `freemind.bithack`.
 
+2) Create theme config to hexo root dir via `cp themes/freemind.bithack/_config.yml ./_config.freemind.bithack.yml`
 
 ## Configuration ##
 
@@ -141,8 +142,6 @@ widgets:
 rss: atom.xml
 fancybox: true
 favicon: favicon.png
-#duoshuo_shortname: 
-
 
 # Analytics (change to yours)
 google_analytics:
@@ -195,14 +194,21 @@ gitalk:
 hexo config file(not theme config)：
 
 ```yml
-# disable category and tag page split
+# add this config to disable category and tag page split (must)
 category_generator:
   per_page: 0
 
 tag_generator:
    per_page: 0
 
-# enable prismjs
+# add this config if you want to change default excerpt lines (*optional*)
+excerpt:
+  depth: 10
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
+
+# enable prismjs (*optional but suggest*)
 highlight:
   enable: false
   line_number: true
@@ -217,7 +223,6 @@ prismjs:
   tab_replace: ''
 ```
 
-
 * **slogan** - slogan display at the index page
 * **menu** - Navigation menu
 * **links** - reference links at the links widget
@@ -226,7 +231,8 @@ prismjs:
 * **fancybox** - Enable [Fancybox](http://fancyapps.com/fancybox/)
 * **valine/waline/Gitalk** - Valine/Waline/Gitalk comment system config
 * **analytics** - Analytics ID. Supports both Google Analytics and Baidu Tongji.
-* **swiftype_key** - Swifttype key to enable local searching. Leave it blank or comment this line if you want to use build-in local search engine.
+* **favicon** - create `favicon.png` on `hexo/source` can change the default logo.
+
 
 ## copyright ##
 
