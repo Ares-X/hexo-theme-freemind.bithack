@@ -208,16 +208,16 @@ excerpt:
   more_excludes: []
   hideWholePostExcerpts: true
 
-# enable prismjs (*optional but suggest*)
+# enable highlight (*optional but suggest*)
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  enable: true
+  enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
