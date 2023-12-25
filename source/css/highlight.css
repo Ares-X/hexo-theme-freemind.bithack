@@ -5,7 +5,7 @@ pre,
     margin: 1em 0;
     padding: 1em 2%;
     overflow: auto;
-    color: #ccc;
+    color: #c9d1d9;
     font-size: 14px;
     text-shadow: none;
     -webkit-border-radius: 4px;
@@ -135,9 +135,12 @@ pre code {
     float: right
 }
 
-pre .comment,
+pre .comment{
+        color: #8b949e
+    }
+
 pre .title {
-    color: #999
+    color: #d2a8ff
 }
 
 pre .variable,
@@ -152,16 +155,19 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-    color: #f2777a
+    color: #79c0ff
 }
 
-pre .number,
+pre .number{
+        color: #79c0ff
+}
+
 pre .preprocessor,
 pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-    color: #f99157
+    color: #ffa657
 }
 
 pre .class,
@@ -176,7 +182,7 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-    color: #9c9
+    color: #a5d6ff
 }
 
 pre .css .hexcolor {
@@ -196,5 +202,5 @@ pre .coffeescript .title {
 
 pre .keyword,
 pre .javascript .function {
-    color: #c9c
+    color: #ff7b72
 }
